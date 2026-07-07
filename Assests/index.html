@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karachi Guest House - Premium Stays in DHA & Clifton</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar" id="site-navbar">
+    <div class="logo-container">
+        <img src="images/logo.png" alt="logo" class="logoImg">
+        <div class="logo">KGH</div>
+    </div>
+    
+    <nav>
+        <a href="#locations">Locations</a>
+        <a href="#rooms">Rooms & Rates</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+    <div class="nav-right">
+        <a href="#contact" class="btn-primary nav-book">Book Now</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="tagline">FIVE BRANCHES,one standard</p>
+                <h1>Your <span>Elite</span> comfort <br>in Karachi</h1>
+                <p class="hero-description">
+                    Executive travel, family retreats, and fully furnished bungalows across DHA and Clifton. Experience uninterrupted power, elite security, and tailored hospitality.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Reserve Your Stay</a>
+                    <a href="#rooms" class="btn-secondary">Explore Rates</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><strong>4.9 / 5</strong><p>Guest Rating</p></div>
+                    <div class="stat-item"><strong>24 / 7</strong><p>Power & Security</p></div>
+                    <div class="stat-item"><strong>3+ Prime</strong><p>Locations</p></div>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="main-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Premium Bungalow Executive Lounge" class="hero-main-img">
+                    <span class="img-badge"><i class="fa-solid fa-circle"></i> Secure Gated Premises</span>
+                </div>
+                <div class="sub-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=400&q=80" alt="Luxury Master Suite Interior" class="hero-sub-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-bar">
+            <form id="quick-check-form">
+                <div class="input-group">
+                    <label>CHECK-IN</label>
+                    <input type="date" required id="hero-checkin">
+                </div>
+                <div class="input-group">
+                    <label>CHECK-OUT</label>
+                    <input type="date" required id="hero-checkout">
+                </div>
+                <div class="input-group">
+                    <label>SELECT LOCATION</label>
+                    <select id="hero-location-select">
+                        <option value="DHA Phase VII (Khayaban-e-Aziz Bhatti)">DHA Phase VII - Near Suffa Uni</option>
+                        <option value="DHA Phase 2 Extension">DHA Phase 2 Ext - Opp NADRA Mega</option>
+                        <option value="Clifton Block 4 (Families Only)">Clifton Block 4 - Near Dolmen Mall</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-search">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="locations" class="locations-section">
+        <div class="section-header">
+            <p class="tagline">OUR BRANCHES</p>
+            <h2>Prime Locations Across Karachi</h2>
+            <p class="section-desc">Perfectly positioned in the city's most secure, prestigious neighborhoods for seamless access to top routes.</p>
+        </div>
+        <div class="locations-grid">
+            <div class="location-card">
+                <div class="loc-icon"><i class="fa-solid fa-building-user"></i></div>
+                <h3>DHA Phase VII Branch</h3>
+                <p class="loc-address">Khayaban-e-Aziz Bhatti, DHA Phase VII. Near DHAI Suffa University.</p>
+                <span class="loc-tag">Executive & Student Friendly</span>
+            </div>
+            <div class="location-card">
+                <div class="loc-icon"><i class="fa-solid fa-hotel"></i></div>
+                <h3>DHA Phase 2 Extension</h3>
+                <p class="loc-address">DHA Phase 2 Extension. Directly opposite the NADRA Mega Centre.</p>
+                <span class="loc-tag">Corporate Central Hub</span>
+            </div>
+            <div class="location-card premium-highlight">
+                <div class="loc-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                <h3>Clifton Block 4 Branch</h3>
+                <p class="loc-address">Clifton Block 4. Near Dolmen Mall Clifton.</p>
+                <span class="loc-tag family-only"><i class="fa-solid fa-users"></i> Families Only</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <div class="section-header">
+            <p class="tagline">ROOMS & ACCOMMODATION PRICING</p>
+            <h2>Tailored Rooms & Furnished Bungalows</h2>
+            <p class="section-desc">Select from premium individual rooms or book private luxury bungalows tailored perfectly for short-term and long-term corporate or family stays.</p>
+        </div>
+        <div class="rooms-grid">
+            <div class="room-card">
+                <div class="room-img-container">
+                    <img src="images/single room (new).png" alt="Single Person Room Portfolio">
+                    <span class="room-badge">Solo Professional</span>
+                </div>
+                <div class="room-info">
+                    <h3>Single Person Room</h3>
+                    <p>Designed for independent executive corporate travelers. Includes dedicated workspace, single bed layout, and fast premium internet.</p>
+                    <div class="room-footer">
+                        <span class="price">PKR 6,000 <span>/ night</span></span>
+                        <a href="#contact" class="view-room-btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-img-container">
+                    <img src="images/double standard.jpg" alt="Standard Double Room Setup">
+                    <span class="room-badge">Popular Choice</span>
+                </div>
+                <div class="room-info">
+                    <h3>Standard Double Room</h3>
+                    <p>Comfortable double-occupancy layout suited for couples or traveling associates looking for essential premium luxury.</p>
+                    <div class="room-footer">
+                        <span class="price">PKR 7,500 <span>/ night</span></span>
+                        <a href="#contact" class="view-room-btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-img-container">
+                    <img src="images/double deluxe.jpg" alt="Deluxe Double Luxury Suite">
+                    <span class="room-badge">Executive Class</span>
+                </div>
+                <div class="room-info">
+                    <h3>Deluxe Double Room</h3>
+                    <p>Enhanced spacing featuring top-tier custom woodwork, plush master bedding, and modern high-end bathroom amenities.</p>
+                    <div class="room-footer">
+                        <span class="price">PKR 8,500 <span>/ night</span></span>
+                        <a href="#contact" class="view-room-btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-img-container">
+                    <img src="images/family rooms.png" alt="Family Lounge and Connected Suite">
+                    <span class="room-badge">Great Value</span>
+                </div>
+                <div class="room-info">
+                    <h3>Family Room</h3>
+                    <p>Spacious room layout comfortably containing bedding structures for larger family units seeking elite comfort near Clifton / DHA.</p>
+                    <div class="room-footer">
+                        <span class="price">PKR 10,500 <span>/ night</span></span>
+                        <a href="#contact" class="view-room-btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-img-container">
+                    <img src="images/double master.jpg" alt="Double Master Elite Interior Layout">
+                    <span class="room-badge">Premium Master</span>
+                </div>
+                <div class="room-info">
+                    <h3>Double Master Room</h3>
+                    <p>The ultimate individual luxury experience. Grand proportions, private seating lounge corners, and premium fixtures.</p>
+                    <div class="room-footer">
+                        <span class="price">PKR 12,000 <span>/ night</span></span>
+                        <a href="#contact" class="view-room-btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card bungalow-card">
+                <div class="room-img-container">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Fully Furnished Luxury Bungalow Structure">
+                    <span class="room-badge special-gold">Short & Long Term</span>
+                </div>
+                <div class="room-info">
+                    <h3>Fully Furnished Bungalows</h3>
+                    <p>Entire luxury private standalone bungalows available for deployment. Perfect configuration for corporate groups, wedding events, or extended family stays.</p>
+                    <div class="room-footer">
+                        <span class="price">Contact For Quote</span>
+                        <a href="#contact" class="view-room-btn Quote-btn">Inquire Now <i class="fa-solid fa-phone-volume"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <div class="section-header">
+            <p class="tagline">EVERY ESSENTIAL, QUIETLY HANDLED</p>
+            <h2>Engineered For Peace Of Mind</h2>
+        </div>
+        <div class="amenities-grid">
+            <div class="amenity-card">
+                <div class="amenity-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>24/7 Power Backup</h3>
+                <p>Heavy-duty generator setups ensure uninterrupted cooling and light systems continuously.</p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Gated & Guarded</h3>
+                <p>Round-the-clock professional security guard presence on site backed with high-tech CCTV systems.</p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon"><i class="fa-solid fa-wifi"></i></div>
+                <h3>Executive Wi-Fi</h3>
+                <p>Complimentary enterprise-grade high-speed broadband connections for reliable remote operations.</p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon"><i class="fa-solid fa-couch"></i></div>
+                <h3>Modern Lounges</h3>
+                <p>Immaculately detailed interior community lounges designed for hosting guests professionally.</p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon"><i class="fa-solid fa-bed"></i></div>
+                <h3>Daily Housekeeping</h3>
+                <p>Spotless maintenance metrics. Premium fresh hotel linens changed daily without delays.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="premium-gallery-section">
+        <div class="gallery-upper-control">
+            <div class="section-header">
+                <p class="tagline">A CLOSER LOOK</p>
+                <h2>Inside Our Spaces</h2>
+                <p class="section-desc">Swipe or use control keys to explore the pristine visual details across our suites and landscaped environments.</p>
+            </div>
+            <div class="scroll-navigation-actions">
+                <button class="nav-scroll-btn btn-prev" aria-label="Scroll Left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="nav-scroll-btn btn-next" aria-label="Scroll Right"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-scroll-outer">
+            <div class="gallery-scroll-inner" id="interactive-scroll-track">
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item1.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item3.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item4.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item5.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item6.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item8.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item9.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item10.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item13.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item7.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item12.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div><div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item2.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item16.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+                <div class="premium-gallery-card">
+                    <img src="images/images-folder/gallery-item15.jpg" alt="Main Entryway Hall">
+                    <div class="card-overlay-meta">
+                        <span class="img-category">Our Spaces</span>
+                        <h3>Especially for you</h3>
+                    </div>
+                </div>
+
+            
+                
+            </div>
+        </div>
+
+        <div class="gallery-progress-container">
+            <div class="gallery-progress-bar" id="scroll-progress-indicator"></div>
+        </div>
+    </section>
+
+    <div class="gallery-lightbox-modal" id="gallery-lightbox">
+        <span class="close-lightbox-trigger">&times;</span>
+        <img class="lightbox-content-target" id="lightbox-main-img" alt="Enlarged View">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <section id="contact" class="inquiry-section">
+        <div class="inquiry-wrapper">
+            <div class="inquiry-info">
+                <p class="tagline dark-tag">LET'S PLAN YOUR VISIT</p>
+                <h2>Reserve Your Stay</h2>
+                <p class="inquiry-sub">Share your details below. Our reservation desk will verify room vacancy and contact you back on your mobile number within an hour.</p>
+                
+                <div class="contact-details">
+                    <h3>Karachi Guest Houses</h3>
+                    <p class="address-desc">Serving premium luxury in Clifton, Defence (DHA) & Shahrah-e-Faisal.</p>
+                    
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span>Call or WhatsApp</span>
+                            <p>+92 300 3349277</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                        <div>
+                            <span>Official Portal</span>
+                            <p>karachiguesthouses.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inquiry-form-container">
+                <form id="main-inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="70c3faff-32e0-46ba-ba5a-5ead421d37f4">
+                
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="Client Name" placeholder="Your full name" required id="form-name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone / WhatsApp Number</label>
+                            <input type="tel" name="Contact Number" placeholder="0300 1234567" required id="form-phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Check-in Date</label>
+                            <input type="date" name="Check-In" required id="form-checkin">
+                        </div>
+                        <div class="form-group">
+                            <label>Check-out Date</label>
+                            <input type="date" name="Check-Out" required id="form-checkout">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Preferred Branch Location</label>
+                            <select name="Branch Location" id="form-location" required>
+                                <option value="DHA Phase VII (Khayaban-e-Aziz Bhatti)">DHA Phase VII (Near Suffa University)</option>
+                                <option value="DHA Phase 2 Extension">DHA Phase 2 Extension (Opp. NADRA Mega Center)</option>
+                                <option value="Clifton Block 4 (Families Only)">Clifton Block 4 (Near Dolmen Mall — Families Only)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Accommodation Requirement</label>
+                            <select name="Accommodation Choice" id="form-room" required>
+                                <option value="Single Person Room (PKR 6000)">Single Person Room — PKR 6,000</option>
+                                <option value="Standard Double Room (PKR 7500)">Standard Double Room — PKR 7,500</option>
+                                <option value="Deluxe Double Room (PKR 8500)">Deluxe Double Room — PKR 8,500</option>
+                                <option value="Family Room (PKR 10500)">Family Room — PKR 10,500</option>
+                                <option value="Double Master Room (PKR 12000)">Double Master Room — PKR 12,000</option>
+                                <option value="Fully Furnished Private Bungalow">Fully Furnished Bungalow (Short/Long Term)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Requests / Notes (optional)</label>
+                        <textarea name="Special Requests" placeholder="Early check-in requests, structural parameters for bungalows, booking duration, etc..." rows="4" id="form-notes"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Reservation Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Karachi Guest Houses</h2>
+                <p>The premium accommodation alternative offering absolute luxury across secure neighborhoods in Clifton and DHA.</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/923003349277" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Branches</h4>
+                <a href="#locations">DHA Phase 7</a>
+                <a href="#locations">DHA Phase 2 Ext</a>
+                <a href="#locations">Clifton Block 4</a>
+            </div>
+            <div class="footer-links">
+                <h4>Accommodation</h4>
+                <a href="#rooms">Rooms & Rates</a>
+                <a href="#rooms">Furnished Bungalows</a>
+                <a href="#contact">Corporate Booking</a>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Hotlines</h4>
+                <p><i class="fa-solid fa-phone"></i> 0300 3349277</p>
+                <p><i class="fa-solid fa-globe"></i> karachiguesthouses.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Karachi Guest Houses. All rights reserved.</p>
+            <p>Clifton • Defence • Shahrah-e-Faisal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
